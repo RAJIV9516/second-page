@@ -1,0 +1,841 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    overflow-x: hidden;
+}
+html{
+    /* overflow-x: hidden; */
+}
+/* .topnav{
+    position: sticky;
+    top: 0px;
+} */
+ .all{
+    position: sticky;
+    top: 0px;
+    background-color: white;
+ }
+.topnav{
+    height: 25px;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    overflow-x: hidden;
+    
+}
+.topnav article{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 50px;
+
+}
+/* ==================midnav=================== */
+/* .midnav {
+    position: sticky;
+    top: 0px;
+   
+} */
+ .midnav{
+    overflow-x: hidden;
+ }
+.midnav article{
+    display: flex;
+}
+.midnav article .div1 img{
+    width: 130px;
+    height: 50px;
+    padding-left: 100px;
+
+}
+
+.midnav article .div2{
+    height: 30px;
+    width: 650px;
+    margin-top: 10px;
+    margin-left: 50px;
+    border-radius: 5px;
+    border: 0.5px solid black;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+/* .midnav article .div3{
+    height: 39px;
+    width: 100px;
+    margin-top: 10px; */
+    /* background-color: rgb(93, 93, 234);
+    border-radius: 5px;
+    background-color: skyblue; */
+    
+.midnav article .div3{
+    height: 150p;
+    width: 150px;
+    padding-left: 140px;
+    padding-top: 10px;
+}
+.midnav article .div4{
+    padding-top: 20px;
+    padding-left: 30px;
+    font-size: 20px;
+
+}
+.midnav article .div5{
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.midnav article .div5 a{
+    text-decoration: none;
+}
+.midnav article .div6{
+    padding-top: 20px;
+    padding-left: 40px;
+    font-size: 20px;
+}
+.midnav article .div7{
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.midnav article .div7 a{
+    text-decoration: none;
+}
+/* ================mainnab============== */
+/* .mainnav{
+    position: sticky;
+    top: 0px;
+} */
+.mainnav{
+    padding-top: 15px;
+    padding-left: 80px;
+    padding-right: 250px;
+    overflow-x: hidden;
+}
+.mainnav article{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 13px;
+}
+.mainnav article div a{
+    text-decoration: none;
+}
+
+#smallnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px 20px 50px;
+    display: none;
+}
+
+#shownav{
+    width: 200px;
+    height: 100vh;
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    left: -3000px;
+    /* opacity: 0.1; */
+    /* padding: 20px 0px 0px 20px; */
+
+}
+
+
+@media(max-width:1025px){
+    .mainnav{
+        display: none;
+    }
+
+    .midnav{
+        display: none;
+    }
+
+    .topnav{
+        display: none;
+    }
+
+    #smallnav{
+        display: flex;
+        padding: 0px 20px 0px 20px;
+
+    }
+    #smallnav #div1 img{
+        height: 150px;
+    }
+    #shownav{
+          padding: 20px 0px 0px 20px;
+
+    }
+    #shownav div a{
+        text-decoration: none;
+    }
+    #shownav div{
+        padding: 15px;
+    }
+
+    #input1:checked ~ #shownav{
+        left: 0px;
+        transition:left 1s;
+    }
+
+
+}
+/* ============================================================== */
+#slider{
+    display: flex;
+    animation-name: slider;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    overflow-x: hidden;
+}
+#slider div img{
+    width: 1530px;
+    height: 420px;
+}
+#slider div{
+    width: 1530px;
+    height: 420px;
+    /* border: 2px solid blue; */
+
+}
+#mainslider{
+    overflow-x: hidden;
+    width: 100%;
+}
+
+@keyframes slider{
+    0%{
+        margin-left: 0px;
+    }
+    15%{
+        margin-left: 0px;
+    }
+    20%{
+        margin-left: -1530px;
+    }
+    35%{
+        margin-left: -1530px;
+    }
+    40%{
+        margin-left: -3060px;
+    }
+    55%{
+        margin-left: -3060px;
+    }
+    60%{
+        margin-left: -4590px;
+    }
+    75%{
+        margin-left: -4590px;
+    }
+    80%{
+        margin-left: -6120px;
+    }
+    95%{
+        margin-left: -6120px;
+    }
+    100%{
+        margin-left: -7650px;
+    }
+}
+/* ==============hero section========= */
+.hero{
+    overflow-x: hidden;
+}
+.hero article{
+    padding-left: 150px;
+    padding-top: 70px;
+    overflow-x: hidden;
+
+}
+
+.hero article .div1{
+    font-size: 30px;
+}
+.hero .div2 a{
+    text-decoration: none;
+    color: white;
+    border-radius: 2px;
+    background-color: rgb(58, 166, 233);
+    margin-left: 1150px;
+    padding: 10px;
+}
+.hero article .div3{
+    font-size: 18px;
+}
+.hero article .div4 a{
+    margin-left: 1290px;
+    background-color: greenyellow;
+    padding: 15px;
+    border-radius: 50px;
+}
+@media(max-width:431px){
+    .hero article{
+        padding-left: 70px;
+        padding-top: 70px;
+        overflow-x: hidden;
+    
+    }
+    .hero .div2 a{
+        text-decoration: none;
+        color: white;
+        border-radius: 2px;
+        background-color: rgb(58, 166, 233);
+        /* margin-left: 250px; */
+        padding: 5px;
+    }
+    .hero .div2{
+        padding-bottom: 10px;
+        padding-left: 250px;
+    }
+}
+@media(max-width:769px){
+    .hero .div2 a{
+        text-decoration: none;
+        color: white;
+        border-radius: 2px;
+        background-color: rgb(58, 166, 233);
+        margin-left: 450px;
+        padding: 5px;
+    }
+    .hero .div2{
+        padding-bottom: 10px;
+        padding-left: 450px;
+    }
+    
+}
+@media(max-width:1024px){
+    .hero .div2 a{
+        text-decoration: none;
+        color: white;
+        border-radius: 2px;
+        background-color: rgb(58, 166, 233);
+        margin-left: 700px;
+        padding: 5px;
+    }
+    .hero .div2{
+        padding-bottom: 10px;
+    }
+}
+
+
+
+
+
+/* =================================== */
+.card{
+    display: grid;
+    grid-template-columns: auto auto auto auto  ;
+    /* justify-content: space-between; */
+    align-items: center;
+    overflow: hidden;
+    padding-left: 130px;
+    padding-right: 130px;
+    overflow-x: hidden;
+}
+.card article{
+    height: 525px;
+    width: 300px;
+    margin-top: 30px;
+    border: 0.1px solid black;
+    border-radius: 5px;
+    
+}
+.card article div img{
+    
+    width: 300px;
+    height: 300px;
+}
+.card article .div1 a{
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    font-size: 15px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.card article .div2{
+    padding-left: 10px;
+    font-size: 20px;
+}
+.card article .div3{
+    font-size: 20px;
+    padding-left: 30px;
+    padding-top: 5px;
+}
+.card article .div4{
+    padding-left: 50px;
+    font-size: 15px;
+    padding-top: 5px;
+    color: green;
+}
+.card article .div5{
+    padding-left: 130px;
+    padding-top: 30px;
+    font-size: 20px;
+}
+.card article .div6 {
+    padding-left: 50px;
+    margin-top: 30px;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 2px;
+    background-color: rgb(58, 166, 233);
+    border-radius: 5px;
+    padding-left: 100px;
+
+}
+.card .ar2 .div1 a{
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    font-size: 15px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.card .ar2 .div2{
+    padding-left: 10px;
+    font-size: 20px;
+}
+.card .ar2 .div3{
+    font-size: 18px;
+    padding-left: 30px;
+    padding-top: 5px;
+}
+.card .ar2 .div4{
+    padding-left: 50px;
+    font-size: 15px;
+    padding-top: 5px;
+    color: green;
+}
+.card .ar2 .div5{
+    padding-left: 130px;
+    padding-top: 30px;
+    font-size: 20px;
+}
+.card .ar2 .div6 {
+    padding-left: 50px;
+    margin-top: 30px;
+    padding: 16px;
+    text-decoration: none;
+    color: white;
+    border-radius: 2px;
+    background-color: rgb(58, 166, 233);
+    border-radius: 5px;
+    padding-left: 100px;
+
+}
+.card .ar3 .div1 a{
+    color: white;
+    background-color: rgb(115, 203, 115);
+    text-decoration: none;
+    font-size: 15px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.card .ar3 .div2{
+    padding-left: 30px;
+    font-size: 19px;
+}
+.card .ar3 .div3{
+    font-size: 18px;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+.card .ar3 .div4{
+    padding-left: 40px;
+    font-size: 15px;
+    padding-top: 5px;
+    color: green;
+}
+.card .ar3 .div5{
+    padding-left: 130px;
+    padding-top: 13px;
+    font-size: 20px;
+}
+.card .ar3 .div6 {
+    padding-left: 50px;
+    margin-top: 30px;
+    padding: 16px;
+    text-decoration: none;
+    color: white;
+    border-radius: 2px;
+    background-color: rgb(58, 166, 233);
+    border-radius: 5px;
+    padding-left: 100px;
+}
+.card .ar4 .div1 a{
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    font-size: 15px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.card .ar4 .div2{
+    padding-left: 15px;
+    font-size: 19px;
+}
+.card .ar4 .div3{
+    font-size: 18px;
+    padding-left: 22px;
+    padding-top: 5px;
+}
+.card .ar4 .div4{
+    padding-left: 25px;
+    font-size: 15px;
+    padding-top: 5px;
+    color: green;
+}
+
+.card .ar4 .div5{
+    padding-left: 130px;
+    padding-top: 13px;
+    font-size: 20px;
+}
+.card .ar4 .div6 {
+    padding-left: 50px;
+    margin-top: 30px;
+    padding: 16px;
+    text-decoration: none;
+    color: white;
+    border-radius: 2px;
+    background-color: rgb(58, 166, 233);
+    border-radius: 5px;
+    padding-left: 100px;
+
+}
+@media(max-width:1025px){
+   .card{
+     display: grid;
+    grid-template-columns: auto auto   ;
+   }
+}
+@media(max-width:769px){
+    .card{
+        padding-left: 85px;
+    }
+}
+@media(max-width:431px){
+    .card{
+        display: grid;
+       grid-template-columns: auto ;
+       padding-left: 70px;
+      }
+
+}
+
+/* ===================================================== */
+
+/* ==================hero3================= */
+.hero3{
+    height: 120px;
+    border: 0.1px solid black;
+    margin: 0px 40px 0px 40px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    overflow-x: hidden;
+}
+.hero3 article .div1 img{
+    height: 35px;
+    padding-left: 140px;
+}
+.hero3 article .div2{
+    padding-left: 125px;
+    padding-top: 8px;
+}
+.hero3 article .div3{
+    padding-left: 90px;
+    padding-top: 5px;
+}
+.hero3 article .div4 img{
+    width: 60px;
+    height: 40px;
+    padding-left: 30px;
+}
+.hero3 article .div5{
+    padding-top: 8px;
+    padding-left: 20px;
+
+}
+.hero3 article .div7{
+    font-size: 25px;
+    padding-right: 40px;
+}
+.hero3 article .div8 a{
+    text-decoration: none;
+    color: rgb(58, 166, 233);
+    border: 0.1px solid skyblue;
+    padding: 10px;
+    border-radius: 5px;
+}
+.hero3 article .div8{
+    padding-top: 30px;
+    padding-left: 80px;
+
+}
+.hero3 article .div8 :hover{
+    color: white;
+    background-color: rgb(58, 166, 233);
+}
+
+@media(max-width:431px){
+    .hero3{
+    margin: 20px 0px 0px 0px;
+
+    }
+    .hero3 article .div1 img{
+        height: 35px;
+        padding-left: 40px;
+    }
+    .hero3 article .div2{
+        padding-left: 25px;
+        padding-top: 8px;
+    }
+    .hero3 article .div3{
+        padding-left: 20px;
+        padding-top: 5px;
+    }
+    .hero3 article .div4 img{
+        width: 50px;
+        height: 30px;
+        padding-left: 20px;
+    }
+    .hero3 article .div5{
+        padding-top: 8px;
+        padding-left: 20px;
+    
+    }
+    .hero3 article .div6{
+        padding-left: 20px;
+    }
+    .hero3 article .div7{
+        font-size: 20px;
+    }
+    .hero3 article .div8{
+        padding-top: 30px;
+        padding-left: 30px;
+    
+    }
+    
+}
+@media(max-width:769px){
+    .hero3 article .div1 img{
+        height: 35px;
+        padding-left: 70px;
+    }
+    .hero3 article .div2{
+        padding-left: 50px;
+        padding-top: 8px;
+    }
+    .hero3 article .div3{
+        padding-left: 30px;
+        padding-top: 5px;
+    }
+}
+
+
+
+
+
+    /* ============================= */
+.hero4{
+ 
+    border: 0.1px solid black;
+    margin: 0px 40px 0px 40px;
+    overflow-x: hidden;
+}
+.hero4 article{
+    padding-left: 80px;
+    padding-top: 20px;
+    display: flex;
+}
+.hero4 article .div2 img{
+    height: 25px;
+}
+.hero4 article .div3{
+    color: green;
+    padding-left: 5px;
+}
+@media(max-width:769px){
+    .hero4 article .div4 img{
+        height: 40px;
+    }
+}
+@media(max-width:431px){
+    .hero4{
+    margin: 0px 0px 0px 0px;
+
+    }
+    .hero4 article{
+        padding-left: 30px;
+        padding-top: 20px;
+        display: flex;
+    }
+    .hero4 article .div4 img{
+       height: 30px;
+    }
+}
+
+/* ================================== */
+.hero5{
+    border: 0.1px solid black;
+    /* margin: 40px; */
+    display: flex;
+    justify-content: space-evenly;
+    overflow-x: hidden;
+    margin: 0px 40px 0px 40px;
+
+}
+.hero5 article{
+    padding-top: 20px;
+}
+.hero5 article div{
+    margin: 20px;
+    font-size: 18px;
+}
+.hero5 article div img{
+    height: 250px;
+}
+
+
+@media(max-width:1025px){
+    .hero5{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media(max-width:431px){
+    .hero5{
+        display: grid;
+        grid-template-columns:  auto;
+    }
+}
+@media(max-width:431px){
+    .hero5{
+    margin: 0px 0px 0px 0px;
+
+    }
+}
+
+
+/* ========================================================================= */
+.hero6 {
+    
+    border: 0.1px solid black;
+    /* margin: 40px; */
+    overflow-x: hidden;
+    margin: 0px 40px 0px 40px;
+
+}
+.hero6 .ar1 div img{
+    height: 25px;
+    padding: 15px;
+}
+.hero6 .ar1{
+    display: flex;
+    padding-left: 450px;
+    padding-top: 30px;
+}
+.hero6 .ar2{
+    display: flex;
+    padding-left: 490px;
+}
+.hero6 .ar2 div img{
+    padding: 5px;
+}
+@media(max-width:1025px){
+    .hero6 .ar1{
+        display: flex;
+        padding-left: 300px;
+        padding-top: 30px;
+    }
+    .hero6 .ar2{
+        display: flex;
+        padding-left: 335px;
+    }
+}
+@media(max-width:769px){
+    .hero6 .ar1{
+        display: flex;
+        padding-left: 150px;
+        padding-top: 30px;
+    }
+    .hero6 .ar2{
+        display: flex;
+        padding-left: 190px;
+    }
+}
+
+@media(max-width:431px){
+    .hero6 .ar1{
+        display: flex;
+        padding-left: 20px;
+        padding-top: 30px;
+    }
+    .hero6 .ar2{
+        display: flex;
+        padding-left: 20px;
+    }
+    .hero6 {
+    
+        border: 0.1px solid black;
+        margin: 0px;
+        overflow-x: hidden;
+    }
+}
+@media(max-width:431px){
+    .hero6 .ar2{
+        padding-left: 60px;
+          
+    }
+}
+
+/* ================================================ */
+.hero7 {
+    
+    border: 0.1px solid black;
+    margin: 40px;
+    overflow-x: hidden;
+    margin: 0px 40px 0px 40px;
+
+}
+.hero7 article{
+    padding-top: 40px;
+    padding-left: 440px;
+    font-size: 18px;
+}
+
+@media(max-width:1025px){
+    .hero7 article{
+        padding-top: 40px;
+        padding-left: 290px;
+        font-size: 18px;
+        margin: 0px 0px 20px 0px;
+    }
+}
+@media(max-width:769px){
+    
+    .hero7 article{
+        padding-top: 40px;
+        padding-left: 150px;
+        font-size: 18px;
+    }
+}
+@media(max-width:431px){
+    .hero7 {
+    margin: 0px 0px 0px 0px;
+    }
+    .hero7 article{
+        padding-top: 40px;
+        padding-left: 60px;
+        font-size: 18px;
+    }
+}
+
+

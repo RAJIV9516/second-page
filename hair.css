@@ -1,0 +1,419 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    overflow-x: hidden;
+}
+html{
+    /* overflow-x: hidden; */
+}
+.all{
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+.topnav{
+    height: 25px;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    overflow-x: hidden;
+    
+}
+.topnav article{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 50px;
+
+}
+/* ==================midnav=================== */
+.midnav {
+    overflow-x: hidden;
+}
+.midnav article{
+    display: flex;
+}
+.midnav article .div1 img{
+    width: 130px;
+    height: 50px;
+    padding-left: 100px;
+
+}
+
+.midnav article .div2{
+    height: 30px;
+    width: 650px;
+    margin-top: 10px;
+    margin-left: 50px;
+    border-radius: 5px;
+    border: 0.5px solid black;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+/* .midnav article .div3{
+    height: 39px;
+    width: 100px;
+    margin-top: 10px; */
+    /* background-color: rgb(93, 93, 234);
+    border-radius: 5px;
+    background-color: skyblue; */
+    
+.midnav article .div3{
+    height: 150p;
+    width: 150px;
+    padding-left: 140px;
+    padding-top: 10px;
+}
+.midnav article .div4{
+    padding-top: 20px;
+    padding-left: 30px;
+    font-size: 20px;
+
+}
+.midnav article .div5{
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.midnav article .div5 a{
+    text-decoration: none;
+}
+.midnav article .div6{
+    padding-top: 20px;
+    padding-left: 40px;
+    font-size: 20px;
+}
+.midnav article .div7{
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.midnav article .div7 a{
+    text-decoration: none;
+}
+/* ================mainnab============== */
+.mainnav{
+    padding-top: 15px;
+    padding-left: 80px;
+    padding-right: 250px;
+    overflow-x: hidden;
+}
+.mainnav article{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 13px;
+}
+.mainnav article div a{
+    text-decoration: none;
+}
+#smallnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px 20px 50px;
+    display: none;
+}
+
+#shownav{
+    width: 200px;
+    height: 100vh;
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    left: -3000px;
+    /* opacity: 0.1; */
+    /* padding: 20px 0px 0px 20px; */
+
+}
+
+
+@media(max-width:1025px){
+    .mainnav{
+        display: none;
+    }
+
+    .midnav{
+        display: none;
+    }
+
+    .topnav{
+        display: none;
+    }
+
+    #smallnav{
+        display: flex;
+        padding: 0px 20px 0px 20px;
+
+    }
+    #smallnav #div1 img{
+        height: 150px;
+    }
+    #shownav{
+          padding: 20px 0px 0px 20px;
+
+    }
+    #shownav div a{
+        text-decoration: none;
+    }
+    #shownav div{
+        padding: 15px;
+    }
+
+    #input1:checked ~ #shownav{
+        left: 0px;
+        transition:left 1s;
+    }
+}
+.hero1{
+    overflow-x: hidden;
+}
+.hero1 div img{
+    width: 1530px;
+    height: 415px;
+}
+.hero2{
+    display: flex;
+    overflow-x: hidden;
+}
+.hero2 .div1 a{
+    text-decoration: none;
+    padding-left: 120px;
+    color: lightskyblue;
+}
+.hero2 .div2{
+    padding-left: 10px;
+}
+.hero2 .div3{
+    padding-left: 290px;
+    font-size: 25px;
+    padding-top: 40px;
+}
+@media(max-width:1025px){
+    .hero2 .div3{
+        padding-left: 100px;
+        font-size: 25px;
+        padding-top: 40px;
+    }
+}
+@media(max-width:769px){
+    .hero2 .div3{
+        padding-left: 0px;
+        font-size: 25px;
+        padding-top: 40px;
+    }
+}
+    @media(max-width:431px){
+        .hero2 .div3{
+            padding-left: 0px;
+            font-size: 25px;
+            padding-top: 40px;
+            padding-right: 0px;
+        } 
+    }
+
+
+
+/* ===================== */
+.card{
+    display: grid;
+    grid-template-columns: auto auto auto auto  ;
+    /* justify-content: space-between; */
+    align-items: center;
+    overflow: hidden;
+    padding-left: 130px;
+    padding-right: 130px;
+    overflow-x: hidden;
+}
+.card article{
+    height: 525px;
+    width: 300px;
+    margin-top: 30px;
+    border: 0.1px solid black;
+    border-radius: 5px;
+    
+}
+.card article div img{
+    
+    width: 300px;
+    height: 300px;
+}
+.card .ar1 .div1 a{
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    font-size: 15px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.card .ar1 .div2{
+    padding-left: 10px;
+    font-size: 18px;
+}
+.card .ar1 .div3{
+    font-size: 17px;
+    padding-left: 30px;
+    padding-top: 5px;
+}
+.card .ar1 .div4{
+    padding-left: 50px;
+    font-size: 15px;
+    padding-top: 5px;
+    color: green;
+}
+.card .ar1 .div5{
+    padding-left: 130px;
+    padding-top: 30px;
+    font-size: 20px;
+}
+.card .ar1 .div6 {
+    padding-left: 50px;
+    margin-top: 35px;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 2px;
+    background-color: rgb(58, 166, 233);
+    border-radius: 5px;
+}
+.card .ar2 .div1 a{
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    font-size: 15px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.card .ar2 .div2{
+    padding-left: 10px;
+    font-size: 20px;
+}
+.card .ar2 .div3{
+    font-size: 17px;
+    padding-left: 30px;
+    padding-top: 5px;
+}
+.card .ar2 .div4{
+    padding-left: 50px;
+    font-size: 15px;
+    padding-top: 5px;
+    color: green;
+}
+.card .ar2 .div5{
+    padding-left: 130px;
+    padding-top: 13px;
+    font-size: 20px;
+}
+.card .ar2 .div6 {
+    padding-left: 50px;
+    margin-top: 30px;
+    padding: 16px;
+    text-decoration: none;
+    color: white;
+    border-radius: 2px;
+    background-color: rgb(58, 166, 233);
+    border-radius: 5px;
+}
+.card .ar3 .div1 a{
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    font-size: 15px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.card .ar3 .div2{
+    padding-left: 30px;
+    font-size: 18px;
+}
+.card .ar3 .div3{
+    font-size: 18px;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+.card .ar3 .div4{
+    padding-left: 40px;
+    font-size: 15px;
+    padding-top: 5px;
+    color: green;
+}
+.card .ar3 .div5{
+    padding-left: 130px;
+    padding-top: 13px;
+    font-size: 20px;
+}
+.card .ar3 .div6 {
+    padding-left: 50px;
+    margin-top: 30px;
+    padding: 16px;
+    text-decoration: none;
+    color: white;
+    border-radius: 2px;
+    background-color: rgb(58, 166, 233);
+    border-radius: 5px;
+}
+.card .ar4 .div1 a{
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    font-size: 15px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.card .ar4 .div2{
+    padding-left: 15px;
+    font-size: 19px;
+}
+.card .ar4 .div3{
+    font-size: 18px;
+    padding-left: 22px;
+    padding-top: 5px;
+}
+.card .ar4 .div4{
+    padding-left: 20px;
+    font-size: 14px;
+    padding-top: 5px;
+    color: green;
+}
+
+.card .ar4 .div5{
+    padding-left: 130px;
+    padding-top: 30px;
+    font-size: 20px;
+}
+.card .ar4 .div6 {
+    padding-left: 50px;
+    margin-top: 32px;
+    padding: 16px;
+    text-decoration: none;
+    color: white;
+    border-radius: 2px;
+    background-color: rgb(58, 166, 233);
+    border-radius: 5px;
+}
+@media(max-width:1025px){
+    .card{
+        display: grid;
+        grid-template-columns: auto auto ;
+        align-items: center;
+        padding-left: 200px;
+}
+}
+@media(max-width:769px){
+    .card{
+        display: grid;
+        grid-template-columns: auto auto ;
+        align-items: center;
+        padding-left: 65px;
+    }
+}
+    .card article{
+        margin: 10px;
+    }
+    @media(max-width:431px){
+        .card{
+            display: grid;
+            grid-template-columns: auto ;
+            align-items: center;
+            padding-left: 60px; 
+    }
+}
